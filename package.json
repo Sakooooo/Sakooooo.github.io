@@ -1,0 +1,11 @@
+{
+  "name": "sakooooo.github.io",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/Sakooooo/Sakooooo.github.io.git",
+  "author": "Sakooooo <78461130+Sakooooo@users.noreply.github.com>",
+  "license": "MIT",
+  "dependencies": {
+    "live-server": "^1.2.2"
+  }
+}
