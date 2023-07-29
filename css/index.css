@@ -1,8 +1,11 @@
 html {
-  background: black;
+  background: #595a50;
 }
 
 .top {
+  background: black;
+  margin-left: 25%;
+  margin-right: 25%;
   color: white;
   text-align: center;
 }
