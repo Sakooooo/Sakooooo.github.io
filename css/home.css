@@ -2,10 +2,16 @@ html {
   background: black;
 }
 
+@font-face {
+  font-family: "Nasalization";
+  src: url("/public/nasalization-rg.otf") format("opentype");
+  font-style: Regular;
+}
+
 .top {
-  background: white;
-  margin-left: 10%;
-  margin-right: 10%;
-  color: black;
+  background: transparent;
+  font-family: "Nasalization";
+  font-size: 85%;
+  color: white;
   text-align: center;
 }
