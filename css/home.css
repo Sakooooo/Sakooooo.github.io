@@ -1,0 +1,11 @@
+html {
+  background: black;
+}
+
+.top {
+  background: white;
+  margin-left: 10%;
+  margin-right: 10%;
+  color: black;
+  text-align: center;
+}
