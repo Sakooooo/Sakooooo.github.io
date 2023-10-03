@@ -1,2 +1,0 @@
-# Sakooooo.github.io
-website
