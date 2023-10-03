@@ -5,6 +5,9 @@
   "repository": "https://github.com/Sakooooo/Sakooooo.github.io.git",
   "author": "Sakooooo <78461130+Sakooooo@users.noreply.github.com>",
   "license": "MIT",
+  "scripts": {
+      "start": "live-server"
+  }
   "dependencies": {
     "live-server": "^1.2.2"
   }
