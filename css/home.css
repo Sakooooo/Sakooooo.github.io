@@ -5,13 +5,13 @@
 
 .title {
     background-color: rgb(132, 123, 131, 0.3);
-    margin-left: 10%;
-    margin-right: 10%;
+    margin-left: 20%;
+    margin-right: 20%;
     font-size: 50px;
     color: white;
     font-family: Nasalization;
-    text-align: right;
-    padding-right: 110px;
+    text-align: center;
+    padding-left: 30%;
     display: block;
     line-height: 200px; 
     border-radius: 35px;
