@@ -3,13 +3,30 @@ import Layout from '../layouts/Layout.astro';
 import Card from '../components/Card.astro';
 ---
 
-<Layout title="Sako">
-	<main>
-	    <div class="main">
-		<h1> Sako's Horrible Website </h1>
-	    </div>
-	</main>
+<Layout title="Sako >:3">
+    <h1>It's <span class="gradient">Sako</span></h1>
+    <p class="hello" >
+	I'm still unsure what I'm actually doing
+    </p>
+
+    <h2>I can make shit</h2>
+    <ul role="list" class="card-with-links">
+	<Card
+	    href="https://google.com"
+	    title="SakoEngine"
+	    body="Game Engine. Yeah, thats it."
+	    />
+
+    </ul>
 </Layout>
 
 <style>
+ .card-with-links{
+     display: grid;
+     font-size: large;
+     grid-template-columns: : repeat(auto-fit, minmax(24ch, 1fr));
+     gap: 1rem;
+     padding: 0;
+ }
+
 </style>
