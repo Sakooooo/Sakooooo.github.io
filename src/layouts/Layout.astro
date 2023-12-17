@@ -4,7 +4,6 @@ interface Props {
 }
 
 const { title } = Astro.props;
-import '../styles/global.css';
 ---
 
 <!doctype html>
@@ -21,8 +20,7 @@ import '../styles/global.css';
 		<slot />
 	</body>
 </html>
-
-<style :is:global>
+<style is:global>
 	:root {
 		--accent: 136, 58, 234;
 		--accent-light: 224, 204, 250;
