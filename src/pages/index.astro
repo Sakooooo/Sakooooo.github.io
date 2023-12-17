@@ -4,20 +4,71 @@ import Card from '../components/Card.astro';
 ---
 
 <Layout title="Sako">
-    <h1>Sako</h1>
+    <h1 class="titleHeaders">Sako</h1>
+
+    <p class="topHeader">I make stuff. Sometimes? <br/> Doesn't work out most of the time.</p>
+
+    <br/>
+
+    <h2 class="titleHeaders">Projects:</h2>
+
+    <ul role="list" class="projectCardGrid">
+	<Card
+	    href="https://github.com/sako-o/SakoEngine"
+	    title="SakoEngine"
+	    body="Game Engine. Yeah, thats it."
+	/>
+	<Card
+	    href="https://github.com/Sakooooo/sakofin"
+	    title="SakoFin"
+	    body="Jellyfin Client I'm making out of spite."
+	/>
+	<Card
+	    href="https://github.com/Sakooooo/nixos"
+	    title="NixOS Configuration"
+	    body="System Configurations for NixOS"
+	/>
+    </ul>
+    <p class="littleTodo">TODO:: Make these all websites instead</p>
+    <!-- buttons -->
+    <div class="buttonBackground">
+    <img class="buttons" src="/res/made_with_emacs.svg">
+    </div>
+    <!-- end buttons -->
 </Layout>
 
 <style>
- @font-face {
-     font-family: 'Nasalization';
-     src: url('/fonts/nasalization.otf') format('opentype');
-     font-weight: normal;
-     font-style: normal;
-     font-display: normal;
- }
-
- h1 {
-    text-align: center; 
+ .titleHeaders {
+     text-align: center; 
+     margin: auto;
      font-family: 'Nasalization';
  } 
+
+ .topHeader {
+    text-align: center; 
+    margin: auto;
+    font-family: 'Neuroparsee';
+    font-size: 20px;
+ }
+
+ .projectCardGrid {
+    display: grid; 
+     grid-template-columns: repeat(auto-fit, minmax(20ch, 1fr));
+     gap: 1rem;
+     padding: 0;
+     font-family: 'Nasalization';
+ }
+
+ .buttons {
+     width: 100px;
+     margin: auto;
+     display: block;
+     margin-left: auto;
+     margin-right: auto;
+ }
+
+ .littleTodo {
+     text-align: center;
+     font-size: 9px;
+ }
 </style>
