@@ -10,6 +10,21 @@ import Card from '../components/Card.astro';
 
     <br/>
 
+    <div class="about">
+	<h2 class="titleHeaders">About:</h2>
+	<p class="me">
+	    Lorem ipsuim jwipqojf paosd cup of sandwich <br/>
+	    Lorem ipsuim jwipqojf paosd cup of sandwich <br/>
+	    Lorem ipsuim jwipqojf paosd cup of sandwich <br/>
+	    Lorem ipsuim jwipqojf paosd cup of sandwich <br/>
+	    Lorem ipsuim jwipqojf paosd cup of sandwich <br/>
+	    Lorem ipsuim jwipqojf paosd cup of sandwich <br/>
+	    image on the right is a place holder right now
+	</p>
+	<img class="userimg" src="/res/user.jpeg"/>
+    </div>
+
+
     <h2 class="titleHeaders">Projects:</h2>
 
     <ul role="list" class="projectCardGrid">
@@ -60,7 +75,7 @@ import Card from '../components/Card.astro';
  }
 
  .buttons {
-     width: 100px;
+     width: 88px;
      margin: auto;
      display: block;
      margin-left: auto;
@@ -70,5 +85,19 @@ import Card from '../components/Card.astro';
  .littleTodo {
      text-align: center;
      font-size: 9px;
+ }
+
+ .about {
+     text-align: left;
+ }
+ .about > .me {
+     font-size: 20px;
+     clear: right;
+     float: left;
+ }
+
+ .about > .userimg {
+     width: 250px;
+     margin-left: 100px;
  }
 </style>
