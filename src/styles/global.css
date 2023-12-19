@@ -26,11 +26,20 @@
     font-display: normal;
 }
 
+/* Jetbrains Mono */
+@font-face {
+    font-family: 'Jetbrains Mono';
+    src: url('/fonts/jetbrains-mono.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: normal;
+}
+
 html {
     background: #13151a;
     background-size: 224px;
     color: white;
     margin: auto;
     padding: 1rem;
-    width: 800px;
+    width: 1000px;
 }
