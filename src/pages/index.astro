@@ -4,15 +4,15 @@ import Card from '../components/Card.astro';
 ---
 
 <Layout title="Sako">
-    <h1 class="titleHeaders">Sako</h1>
+    <a href="/">
+	<h1 class="titleHeaders">Sako</h1>
+    </a>
 
     <p class="topHeader">I make stuff. Sometimes? <br/> Doesn't work out most of the time.</p>
-    <div class="navItem">
-	<h2>Blog</h2>
-	<h2>Art</h2>
+    <div class="navBar">
+	<p class="navItem">Blog</h2>
+	<p class="navItem">Art</h2>
     </div>
-
-    <br/>
 
     <div class="about">
 	<h2 class="titleHeaders">About:</h2>
@@ -27,7 +27,6 @@ import Card from '../components/Card.astro';
 	</p>
 	<img class="userimg" src="/res/user.jpeg"/>
     </div>
-
 
     <h2 class="titleHeaders">Projects:</h2>
 
@@ -59,7 +58,6 @@ import Card from '../components/Card.astro';
 <style>
  .titleHeaders {
      text-align: center; 
-     margin: auto;
      font-family: 'Nasalization';
  } 
 
@@ -93,8 +91,11 @@ import Card from '../components/Card.astro';
 
  .about {
      text-align: left;
+
  }
  .about > .me {
+     margin-left: 5%;
+     margin-top: 5%;
      font-size: 20px;
      clear: right;
      float: left;
@@ -102,12 +103,29 @@ import Card from '../components/Card.astro';
 
  .about > .userimg {
      width: 250px;
-     margin-left: 100px;
+     margin-left: 10%;
  }
 
- .navItem {
+ .navBar {
      display: flex;
      flex-direction: row;
-     
+     align-items: center;
+     justify-content: center;
+     gap: 50px;
+     font-size: 25px;
+     color: #be1432;
+     font-family: 'Nasalization';
+     margin-top: -1%;
+     margin-bottom: -4%;
+     /* TODO:: Add background color to this */
  }
+
+ .navBar > .navItem {
+     text-align: center;
+ }
+
+ a {
+  color: inherit;
+  text-decoration: inherit;
+}
 </style>
