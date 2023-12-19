@@ -8,24 +8,6 @@
     font-display: normal;
 }
 
-/* Neuroparsee font */
-@font-face {
-    font-family: 'Neuroparsee';
-    src: url('/fonts/neuroparsee.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-    font-display: normal;
-}
-
-/* Lemon Milk font */
-@font-face {
-    font-family: 'Lemon Milk';
-    src: url('/fonts/lemon-milk.otf') format('opentype');
-    font-weight: normal;
-    font-style: normal;
-    font-display: normal;
-}
-
 /* Jetbrains Mono */
 @font-face {
     font-family: 'Jetbrains Mono';
