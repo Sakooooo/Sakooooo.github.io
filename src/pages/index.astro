@@ -9,23 +9,26 @@ import Card from '../components/Card.astro';
     </a>
 
     <p class="topHeader">I make stuff. Sometimes? <br/> Doesn't work out most of the time.</p>
+
+    <br/>
+
     <div class="navBar">
-	<p class="navItem">Blog</h2>
-	<p class="navItem">Art</h2>
+	
+	<a href="/blog"><p class="navItem">Blog</p></a>
+	<a href="/art"> <p class="navItem">Art</p></a>
     </div>
 
     <div class="about">
 	<h2 class="titleHeaders">About:</h2>
 	<p class="me">
-	    Lorem ipsuim jwipqojf paosd cup of sandwich <br/>
-	    Lorem ipsuim jwipqojf paosd cup of sandwich <br/>
-	    Lorem ipsuim jwipqojf paosd cup of sandwich <br/>
-	    Lorem ipsuim jwipqojf paosd cup of sandwich <br/>
-	    Lorem ipsuim jwipqojf paosd cup of sandwich <br/>
-	    Lorem ipsuim jwipqojf paosd cup of sandwich <br/>
-	    image on the right is a place holder right now
+	    I'm Sako!!! <br/>
+	    Yeah I think that actually might be it. <br/>
+	    I got into all of this by messing around with things. <br/>
+	    Keep getting told not to mess around with stuff<br/>
+	    Didn't care cause it worked out in the end. <br/>
+	    I'm going to make something big someday<br/>
 	</p>
-	<img class="userimg" src="/res/user.jpeg"/>
+	<img class="userimg" src="/res/user.png"/>
     </div>
 
     <h2 class="titleHeaders">Projects:</h2>
@@ -64,16 +67,17 @@ import Card from '../components/Card.astro';
  .topHeader {
     text-align: center; 
     margin: auto;
-    font-family: 'Neuroparsee';
-    font-size: 20px;
+    font-family: 'Jetbrains Mono';
+    margin-top: -2%;
+    font-size: 17px;
  }
 
  .projectCardGrid {
-    display: grid; 
+     display: grid; 
      grid-template-columns: repeat(auto-fit, minmax(20ch, 1fr));
      gap: 1rem;
      padding: 0;
-     font-family: 'Nasalization';
+     font-family: 'Jetbrains Mono';
  }
 
  .buttons {
@@ -94,15 +98,14 @@ import Card from '../components/Card.astro';
 
  }
  .about > .me {
-     margin-left: 5%;
-     margin-top: 5%;
-     font-size: 20px;
+     font-size: 18px;
      clear: right;
      float: left;
+     font-family: 'Jetbrains Mono';
  }
 
  .about > .userimg {
-     width: 250px;
+     width: 240px;
      margin-left: 10%;
  }
 
@@ -111,13 +114,14 @@ import Card from '../components/Card.astro';
      flex-direction: row;
      align-items: center;
      justify-content: center;
-     gap: 50px;
+     gap: 30px;
      font-size: 25px;
      color: #be1432;
-     font-family: 'Nasalization';
-     margin-top: -1%;
-     margin-bottom: -4%;
-     /* TODO:: Add background color to this */
+     font-family: 'Jetbrains Mono';
+     height: 50px;
+     width: 25%;
+     margin: auto;
+     background-color: #232630;
  }
 
  .navBar > .navItem {
