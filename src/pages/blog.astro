@@ -1,0 +1,22 @@
+---
+import Layout from "../layouts/Layout.astro";
+import NavBar from "../components/navBar.astro";
+import Title from "../components/title.astro"
+
+const posts = await Astro.glob("../posts/*.mdx")
+
+posts.sort((a, b) => {
+    const aDate = new Date(a.frontmatter.pubDate);
+    const bDate = new Date(a.frontmatter.pubDate);
+    return bDate - aDate;
+});
+
+---
+
+<Layout title="Sako">
+
+    <Title subTitle="I say stuff here <br/> Now thats awesome"/>
+
+    <NavBar/>
+
+</Layout>
