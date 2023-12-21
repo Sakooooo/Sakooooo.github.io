@@ -1,25 +1,31 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Card from '../components/Card.astro';
+import NavBar from '../components/navBar.astro';
+import Title from '../components/title.astro';
 ---
 
 <Layout title="Sako">
-    <a href="/">
+    <!-- <a href="/">
 	<h1 class="titleHeaders">Sako</h1>
     </a>
+ -->
+    <br/>
+
+    <!-- <p class="topHeader">I make stuff. Sometimes? <br/> Doesn't work out most of the time.</p> -->
+
+    <Title subTitle="I make stuff. Sometimes? <br/> Doesnt work out most of the time"/>
 
     <br/>
 
-    <p class="topHeader">I make stuff. Sometimes? <br/> Doesn't work out most of the time.</p>
-
-    <br/>
-
-    <div class="navBar">
+    <!-- <div class="navBar">
 	
 	<a href="/blog"><p class="navItem">Blog</p></a>
 	<a href="/art"> <p class="navItem">Art</p></a>
     </div>
+ -->
 
+    <NavBar/>
     <div class="about">
 	<h2 class="titleHeaders">About:</h2>
 	<p class="me">
@@ -114,7 +120,7 @@ import Card from '../components/Card.astro';
      margin-left: 4vw;
  }
 
- .navBar {
+ /* .navBar {
      display: flex;
      flex-direction: row;
      align-items: center;
@@ -132,7 +138,7 @@ import Card from '../components/Card.astro';
  .navBar > .navItem {
      text-align: center;
  }
-
+ */
  a {
   color: inherit;
   text-decoration: inherit;
