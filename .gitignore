@@ -8,6 +8,7 @@ dist/
 node_modules/
 .yarn
 .pnp.*
+.direnv
 
 # logs
 npm-debug.log*
