@@ -4,13 +4,6 @@ import NavBar from "../components/navBar.astro";
 import Title from "../components/title.astro"
 
 const posts = await Astro.glob("../posts/*.mdx")
-
-posts.sort((a, b) => {
-    const aDate = new Date(a.frontmatter.pubDate);
-    const bDate = new Date(a.frontmatter.pubDate);
-    return bDate - aDate;
-});
-
 ---
 
 <Layout title="Sako">
