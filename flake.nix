@@ -13,6 +13,7 @@
       default = pkgs.${system}.mkShellNoCC {
         packages = with pkgs.${system}; [
           yarn
+          nodePackages_latest."@astrojs/language-server"
         ];
       };
     });
