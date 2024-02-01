@@ -37,6 +37,7 @@ import Title from '../components/title.astro';
 	    I'm going to make something big someday<br/>
 	</p>
 	<img class="userimg" src="/res/user.png"/>
+        <object data="https://lastfm-recently-played.vercel.app/api?user=Sako-&count=1" />
     </div>
 
     <h2 class="titleHeaders">Projects:</h2>
@@ -110,14 +111,20 @@ import Title from '../components/title.astro';
      clear: right;
      float: left;
      margin-top: 5vw;
-     margin-left: 170px;
+     margin-left: 3vw;
      font-family: 'Jetbrains Mono';
  }
 
  .about > .userimg {
      width: 300px;
      margin: auto;
-     margin-left: 5vw;
+     margin-left: 1vw;
+ }
+
+ .about > object { 
+    display: flex;
+    align-items: center; /*vertical alignement*/
+    justify-content: center; /* horizontal alignement*/
  }
 
  /* .navBar {
