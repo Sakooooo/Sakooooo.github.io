@@ -220,3 +220,11 @@ img {
     text-decoration: none;
     text-align: left;
 }
+
+.buttons {
+    align-items: center;
+    display: flexbox;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+}
