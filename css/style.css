@@ -186,6 +186,7 @@ img {
     #bar p {
 	font-family: monospace, monospace;
 	font-weight: bold;
+	display: inline;
     }
 
     #bar a:link {
@@ -200,7 +201,7 @@ img {
 
     #bar a:hover {
 	text-decoration: none;
-	color: #ffffff;
+	color: #b00000;
     }
 
     #bar a:active {
@@ -208,4 +209,14 @@ img {
 	text-decoration: none;
     }
 
+}
+
+#intro {
+    text-align: center;
+}
+
+#intro h1 {
+    font-size: 2vw;
+    text-decoration: none;
+    text-align: left;
 }
