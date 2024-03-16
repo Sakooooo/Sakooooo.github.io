@@ -2,8 +2,10 @@
 ---
 <html lang="en">
     <div class="navBar">
-	<a href="/blog"><p class="navItem">Blog</p></a>
-	<a href="/art"> <p class="navItem">Art</p></a>
+	<!-- TODO Replace with image -->
+	<a href="/"><p class="navItem">home</p></a>
+	<a href="/blog"><p class="navItem">blog</p></a>
+	<a href="/art"> <p class="navItem">art</p></a>
     </div>
 </html>
 
@@ -12,21 +14,29 @@
      display: flex;
      flex-direction: row;
      align-items: center;
-     justify-content: center;
-     gap: 30px;
-     font-size: 25px;
-     color: rgb(236, 76, 104);
-     font-family: 'Jetbrains Mono';
-     height: 50px;
-     width: 250px;
+     padding-left: 2vw;
+     gap: 7px;
+     font-size: 18px;
+     color: #FFFFFF;
+    font-family: sans-serif;
+    font-weight: bold;
      margin: 0 auto;
-     padding-top: 0.25em;
-     padding-bottom: 0.25em;
-     padding-left: 0.25em;
-     padding-right: 0.25em;
+     margin-top: -0.5vw;
      background-color: #232630;
-     max-width: 36em;
+    height: 2vw;
+    width: 50vw;
+     max-width: 50em;
  }
+
+.navBar a:hover {
+  color: #cc1d13;
+  text-decoration: none;
+}
+
+.navBar a:active {
+  color: #ee4d44;
+  text-decoration: none;
+}
 
  .navBar > .navItem {
      text-align: center;
