@@ -4,15 +4,11 @@ import NavBar from "../components/navBar.astro";
 import Title from "../components/title.astro"
 import BlogCard from "../components/blogCard.astro";
 
-const posts = await Astro.glob("../posts/*.mdx")
+const posts = await Astro.glob("./posts/*.mdx")
 ---
 
 <Layout title="Sako">
-
-    <Title subTitle="I say stuff here <br/> Now thats awesome"/>
-
     <NavBar/>
-
 	<ul role="list" class="link-card-grid">
 		{
 			posts.map((post) => (

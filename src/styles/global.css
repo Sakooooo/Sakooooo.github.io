@@ -28,6 +28,8 @@ html {
     background-size: 224px;
     color: white;
     margin: auto;
+    max-width: 100em;
+    font-family: monospace;
 }
 
 a {
