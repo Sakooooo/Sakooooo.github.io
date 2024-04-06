@@ -3,11 +3,15 @@ import Layout from '../layouts/Layout.astro';
 import Card from '../components/Card.astro';
 import NavBar from '../components/navBar.astro';
 import Title from '../components/title.astro';
+import Transitions, { innerTransition, pageTransition } from "../components/transition.astro";
 ---
 
 <Layout title="Sako">
+    <head>
+	<Transitions/>
+    </head>
     <NavBar/>
-    <div class="buttonBackground">
+    <div class="buttonBackground" transition:animate={innerTransition}>
 	<p class="titleHeaders">friends</p>
 	<img class="buttons" src="/res/buttons/sako.png">
 	<a href="https://moltencoredev.github.io/"><img class="buttons" src="/res/buttons/molten.png"></a>
