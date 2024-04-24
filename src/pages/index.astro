@@ -1,11 +1,21 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Card from '../components/Card.astro';
+import './animations.css';
 ---
 
-<Layout title="sako">
-    <h1>Sako's Website (attempt 2)</h1>
+<Layout title="home">
+    <h1 class="this-needs-to-fade-in" id="big-ass-title-text">SAKO</h1>
 </Layout>
 
 <style>
+ .this-needs-to-fade-in {
+     animation: fadeIn 5s;
+ }
+
+ #big-ass-title-text {
+     font-size: 20vw;
+     text-align: center;
+ }
+ 
 </style>
