@@ -1,0 +1,17 @@
+{
+  "type": "module",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "@astrojs/language-server": "^2.8.4",
+    "astro": "^4.6.4",
+    "typescript": "^5.4.5"
+  },
+  "packageManager": "yarn@4.1.1"
+}
