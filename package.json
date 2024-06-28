@@ -10,8 +10,8 @@
   },
   "dependencies": {
     "@astrojs/language-server": "^2.8.4",
-    "@astrojs/react": "^3.3.4",
-    "@types/react": "^18.3.2",
+    "@astrojs/react": "^3.6.0",
+    "@types/react": "^18.3.3",
     "@types/react-dom": "^18.3.0",
     "astro": "^4.6.4",
     "react": "^18.3.1",
