@@ -11,10 +11,18 @@ import NavBar from '../components/navBar.astro';
 </Layout>
 
 <style>
+ body, html{
+     height: 100%;
+     display: grid;
+     overflow: hidden;
+ }
+
+ .center h1 {
+     font-family: monospace;
+     margin: auto;
+ }
+
  .center {
-     position: absolute;
-     top: 48%;
-     left: 50%;
-     transform: translate(-50%, -50%);
+     margin: auto;
  }
 </style>
