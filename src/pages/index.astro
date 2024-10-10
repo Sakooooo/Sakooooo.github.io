@@ -5,27 +5,29 @@ import Layout from '../layouts/Layout.astro';
 
 <Layout title="Sako">
 	<main>
-	    <h1>h</h1>
+	    <div class="center">
+		<h1>sako</h1>
+	    </div>
 	    <canvas class="background-canvas"></canvas>
 	</main>
 </Layout>
 
 <style>
-	main {
-		margin: auto;
-		padding: 1rem;
-		width: 800px;
-		max-width: calc(100% - 2rem);
-		color: white;
-		font-size: 20px;
-		line-height: 1.6;
-	}
+ html {
+     overflow: hidden;
+ }
+ .center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 100vh;
+ }
 	h1 {
-		font-size: 3rem;
-		font-weight: 700;
-		line-height: 1;
-		text-align: center;
-		margin-bottom: 1em;
+	    color: white;
+	    font-size: 5rem;
+	    text-align: center;
 	}
 
  .background-canvas {
@@ -44,6 +46,7 @@ const context = canvas.getContext("2d")!;
 
 let lastTimestamp = 0;
 
+var x = 0, y = 0;
 function rafCallback(timestamp: DOMHighResTimeStamp) {
   if (!lastTimestamp) {
     lastTimestamp = timestamp;
@@ -57,9 +60,9 @@ function rafCallback(timestamp: DOMHighResTimeStamp) {
   context.clearRect(0, 0, canvas.width, canvas.height);
 
   // TODO use the 2D `context` to draw your dots
-    context.fillRect(25, 25, 100, 100);
-    context.clearRect(45, 45, 60, 60);
-    context.strokeRect(50, 50, 50, 50);
+     context.fillRect(x, y, 20, 10);
+     x += 0.015;
+
 
   requestAnimationFrame(rafCallback);
 }
