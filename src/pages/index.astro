@@ -1,10 +1,12 @@
 ---
 import Layout from '../layouts/Layout.astro';
+
 ---
 
 <Layout title="Sako">
 	<main>
 	    <h1>h</h1>
+	    <canvas class="background-canvas"></canvas>
 	</main>
 </Layout>
 
@@ -25,4 +27,43 @@ import Layout from '../layouts/Layout.astro';
 		text-align: center;
 		margin-bottom: 1em;
 	}
+
+ .background-canvas {
+     position: fixed;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     z-index: -1;
+ }
 </style>
+
+<script>
+const canvas = document.querySelector<HTMLCanvasElement>(".background-canvas")!;
+const context = canvas.getContext("2d")!;
+
+let lastTimestamp = 0;
+
+function rafCallback(timestamp: DOMHighResTimeStamp) {
+  if (!lastTimestamp) {
+    lastTimestamp = timestamp;
+    requestAnimationFrame(rafCallback)
+  }
+
+  const delta = timestamp - lastTimestamp;
+  lastTimestamp = timestamp;
+
+  // clear canvas
+  context.clearRect(0, 0, canvas.width, canvas.height);
+
+  // TODO use the 2D `context` to draw your dots
+    context.fillRect(25, 25, 100, 100);
+    context.clearRect(45, 45, 60, 60);
+    context.strokeRect(50, 50, 50, 50);
+
+  requestAnimationFrame(rafCallback);
+}
+
+requestAnimationFrame(rafCallback);
+
+</script>
