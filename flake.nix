@@ -1,21 +1,26 @@
 {
-  inputs.nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
+  description = "uhh";
 
-  outputs = {
-    self,
-    nixpkgs,
-  }: let
-    supportedSystems = ["x86_64-linux" "aarch64-darwin"];
-    forAllSystems = nixpkgs.lib.genAttrs supportedSystems;
-    pkgs = forAllSystems (system: nixpkgs.legacyPackages.${system});
-  in {
-    devShells = forAllSystems (system: {
-      default = pkgs.${system}.mkShellNoCC {
-        packages = with pkgs.${system}; [
-          pnpm
-          nodePackages_latest."@astrojs/language-server"
-        ];
-      };
-    });
-  };
+  inputs = { nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable"; };
+
+  outputs = { self, nixpkgs }:
+    let
+      inherit (nixpkgs) lib;
+      inherit (builtins) attrValues;
+      eachSystem = f:
+        lib.genAttrs [ "x86_64-linux" ]
+        (system: f nixpkgs.legacyPackages.${system});
+    in {
+
+      devShells = eachSystem (pkgs: {
+        default = pkgs.mkShell {
+          packages = attrValues {
+            inherit (pkgs) pnpm;
+            inherit (pkgs.nodePackages_latest) "@astrojs/language-server";
+          };
+        };
+      });
+
+    };
 }
+
