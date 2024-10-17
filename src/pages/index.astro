@@ -8,13 +8,40 @@ import Layout from '../layouts/Layout.astro';
 	    <div class="top">
 		<h1>placeholder</h1>
 	    </div>
+	    <div class="topBar">
+		<a href="/home"><b>/home</b></a>
+		<a href="/blog">/blog</a>
+	    </div>
 	</main>
 </Layout>
 
 <style>
- h1 {
+ .top {
+     padding: 0.1vw;
+     margin: 1vw;
+ }
+ .topBar {
+     background-color: #e41539;
+     padding: 1vw;
+     display: flex;
+     gap: 1vw;
+ }
+ h1, h2, a {
    color: white;
    font-size: 1rem;
    text-align: left;
  }
+
+a:link {
+  text-decoration: none;
+}
+a:visited {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+a:active {
+  text-decoration: none;
+}
 </style>
