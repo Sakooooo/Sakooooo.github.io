@@ -1,11 +1,12 @@
 ---
 
 const pages = [ "/home", "/blog"];
-
+import logo from '../../public/logo.png';
 ---
 
 <div class="top">
-    <h1>placeholder</h1>
+    <img src="logo.png" width="64px" height="64px" />
+    <h1>sako</h1>
 </div>
 <div class="topBar">
     <a href="/home"><b>/home</b></a>
@@ -16,6 +17,8 @@ const pages = [ "/home", "/blog"];
  .top {
      padding: 0.1vw;
      margin: 1vw;
+     display: flex;
+     gap: 1vw;
  }
  .topBar {
      background-color: #e41539;
