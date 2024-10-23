@@ -1,6 +1,7 @@
 ---
 
 const pages = [ "/home", "/blog"];
+const currentPage = Astro.url.pathname;
 import logo from '../../public/logo.png';
 ---
 
@@ -9,8 +10,11 @@ import logo from '../../public/logo.png';
     <h1>sako</h1>
 </div>
 <div class="topBar">
-    <a href="/home"><b>/home</b></a>
-    <a href="/blog">/blog</a>
+<!-- <a href="/home"><b>/home</b></a> -->
+    <!--    <a href="/blog">/blog</a> -->
+    {pages.map((page) =>(
+    <a class={page === currentPage && pages.includes(currentPage) ? "active" : ""} href={page}>{page}</a>
+    ))}
 </div>
 
 <style>
@@ -25,6 +29,9 @@ import logo from '../../public/logo.png';
      padding: 1vw;
      display: flex;
      gap: 1vw;
+ }
+ .topBar a.active {
+     font-weight: bold;
  }
  h1, h2, a {
    color: white;
