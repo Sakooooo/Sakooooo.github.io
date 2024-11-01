@@ -1,6 +1,6 @@
 ---
 
-const pages = [ "/home", "/blog"];
+const pages = [ "/", "/blog"];
 const currentPage = Astro.url.pathname;
 import logo from '../../public/logo.png';
 ---
@@ -13,7 +13,7 @@ import logo from '../../public/logo.png';
 <!-- <a href="/home"><b>/home</b></a> -->
     <!--    <a href="/blog">/blog</a> -->
     {pages.map((page) =>(
-    <a class={page === currentPage && pages.includes(currentPage) ? "active" : ""} href={page}>{page}</a>
+    <a class={page === currentPage && pages.includes(currentPage) ? "active" : ""} href={page}>{page === "/" ? "/home" :page}</a>
     ))}
 </div>
 
